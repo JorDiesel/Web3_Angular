@@ -1,2 +1,2 @@
 # Web3_Angular
-<p>Le </p>
+<p>Le nom d'utilisateur et le mot de passe est : admin</p>
