@@ -1,0 +1,5 @@
+<h1 i18n>Nombre d'évenements par sport</h1>
+<mat-card *ngFor="let statistique of statistiques">
+    <mat-card-title>{{statistique._id}}</mat-card-title>
+    <mat-card-subtitle>{{statistique.total}}</mat-card-subtitle>    
+</mat-card>

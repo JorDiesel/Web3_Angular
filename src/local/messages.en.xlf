@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="14055903606025706" datatype="html">
+        <source>Projet final dans le câdre du cours de Développement Web 3</source>
+        <target>Final project in Web 3 classe</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pied-de-page/pied-de-page.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4805130975152913582" datatype="html">
+        <source>Réalisé par Jordan Charette</source>
+        <target>Made by Jordan Charette</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pied-de-page/pied-de-page.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4432951589515038773" datatype="html">
+        <source>Vos prix moyens par sports</source>
+        <target>Your's average price by sport's categories</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/stats-nbr-event/stats-nbr-event.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8004356801765878322" datatype="html">
+        <source>Nombre d&apos;évenements par sport</source>
+        <target>Nomber of events by sport's categories</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/stats-prix-moyen/stats-prix-moyen.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="794984061189828636" datatype="html">
+        <source>Formulaire de connection des utilisateurs</source>
+        <target>Login Form</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="543713559263663619" datatype="html">
+        <source>Votre historique d&apos;achat</source>
+        <target>Your purchase history</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/user/user.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

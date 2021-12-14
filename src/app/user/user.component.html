@@ -1,0 +1,26 @@
+<div *ngIf="user == ''">
+<h1 i18n>Formulaire de connection des utilisateurs</h1>
+<form #eventFormUser="ngForm" id="produitFormAjout" (ngSubmit)="validateUser(eventFormUser);">
+  <mat-form-field class="input-full-width">
+    <input type="text" name="username" required minlength="2" maxlength="50" [(ngModel)]="submitUser.username" matInput #nom="ngModel" placeholder="Nom d'utilisateur">        
+  </mat-form-field>
+
+  <mat-form-field class="input-full-width">
+    <input type="password" name="prenom" required minlength="2" maxlength="50" [(ngModel)]="submitUser.password" matInput #nom="ngModel" placeholder="Mot de passe">        
+  </mat-form-field>
+
+  <button matSuffix type="submit" mat-icon-button color="primary" [disabled]="!eventFormUser.form.valid"><i class="material-icons">check</i></button>
+
+</form>
+</div>
+
+<div *ngIf="user != ''">
+<h1 i18n>Votre historique d'achat</h1>
+
+<mat-list id="liste-produit">       
+    <mat-list-item class="hauteur" *ngFor='let evenement of evenements | nondispo'>
+        {{evenement.sport}}   /   {{evenement.date}}   /    {{evenement.prix}}$<mat-divider></mat-divider>
+    </mat-list-item>
+            
+</mat-list>
+</div>

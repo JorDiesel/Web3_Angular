@@ -1,0 +1,5 @@
+<h1 i18n>Vos prix moyens par sports</h1>
+<mat-card *ngFor="let statistique of statistique">
+    <mat-card-title>{{statistique._id}}</mat-card-title>
+    <mat-card-subtitle>{{statistique.moyenne}}$</mat-card-subtitle>    
+</mat-card>

@@ -1,0 +1,80 @@
+<h1>Formulaire afin d'ajouter un nouvel évenement sportif</h1>
+<form #eventFormAjout="ngForm" id="produitFormAjout" (ngSubmit)="onAdd(eventFormAjout);">
+  <mat-form-field class="input-full-width">
+    <input type="text" name="nom" required minlength="2" maxlength="50" [(ngModel)]="nouvelEvenement.nom" matInput #nom="ngModel" placeholder="Nom">        
+  </mat-form-field>
+
+  <mat-form-field class="input-full-width">
+    <input  type="text" name="prenom" required minlength="2" maxlength="50" [(ngModel)]="nouvelEvenement.prenom" matInput #nom="ngModel" placeholder="Prenom">        
+  </mat-form-field>
+
+  <mat-form-field class="input-full-width">
+    <mat-label >Choisir un sport</mat-label>
+    <mat-select  name="sport" required matInput [(ngModel)]="nouvelEvenement.sport" placeholder="Choisir un sport">
+      <mat-option value="Football">Football</mat-option>
+      <mat-option value="Soccer">Soccer</mat-option>
+      <mat-option value="Hockey">Hockey</mat-option>
+      <mat-option value="BasketBall">BasketBall</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="input-full-width">
+    <input  type="text" name="ville" required minlength="2" maxlength="50" [(ngModel)]="nouvelEvenement.amphitheatre.ville" matInput #nom="ngModel" placeholder="Ville">        
+  </mat-form-field>
+
+  <mat-form-field class="input-full-width">
+    <mat-label >Choisir un pays</mat-label>
+    <mat-select  name="sport" required matInput [(ngModel)]="nouvelEvenement.amphitheatre.pays" placeholder="Choisir un pays">
+      <mat-option value="Canada">Canada</mat-option>
+      <mat-option value="États-Unis">États-Unis</mat-option>      
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="input-full-width">
+    <input  type="date" name="date" required  [(ngModel)]="nouvelEvenement.date" matInput #nom="ngModel" placeholder="date">        
+  </mat-form-field>
+
+
+  <mat-form-field class="input-full-width">
+    <mat-label >Choisir une section</mat-label>
+    <mat-select  name="section" required matInput [(ngModel)]="nouvelEvenement.positionement.section" placeholder="Choisir une section">
+      <mat-option value="A">A</mat-option>
+      <mat-option value="B">B</mat-option>
+      <mat-option value="C">C</mat-option>
+      <mat-option value="D">D</mat-option>
+      <mat-option value="E">E</mat-option>
+      <mat-option value="F">F</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="input-full-width">
+    <input  type="number" name="ranger" required maxlength="3" min="0" max="599" [(ngModel)]="nouvelEvenement.positionement.ranger" matInput #nom="ngModel" placeholder="Choisir une ranger">        
+  </mat-form-field>
+
+  <mat-form-field class="input-full-width">
+    <input  type="number" name="siege" required maxlength="2" min="0" max="100" [(ngModel)]="nouvelEvenement.positionement.siege" matInput #nom="ngModel" placeholder="Choisir un siège">        
+  </mat-form-field>
+
+  <mat-form-field class="input-full-width">
+    <input  type="number" name="nombrePlace" required min="0" max="21000" maxlength="5" [(ngModel)]="nouvelEvenement.nombrePlace" matInput #nom="ngModel" placeholder="Nombre de place">        
+  </mat-form-field>
+
+  <mat-slide-toggle  name="guichetFermer" [(ngModel)]="nouvelEvenement.guichetFermer" >Guichet Fermé?</mat-slide-toggle>
+
+  <mat-form-field class="input-full-width">
+    <input  type="number" name="prix" required maxlength="10" min="0" [(ngModel)]="nouvelEvenement.prix" matInput #nom="ngModel" placeholder="Prix">        
+  </mat-form-field>
+
+  <mat-form-field class="input-full-width">
+    <input  type="number" name="rabais" required maxlength="10" min="0" [(ngModel)]="nouvelEvenement.rabais" matInput #nom="ngModel" placeholder="Rabais">        
+  </mat-form-field>
+
+  <mat-slide-toggle name="vedette" [(ngModel)]="nouvelEvenement.vedette" >Billet Vedette?</mat-slide-toggle>   
+  
+  <mat-form-field class="input-full-width">
+    <input  type="text" name="tags" maxlength="255"  [(ngModel)]="nouvelEvenement.tags" matInput #nom="ngModel" placeholder="Commentaire (optionnel)">        
+  </mat-form-field>
+
+  <button matSuffix type="submit" mat-icon-button color="primary" [disabled]="!eventFormAjout.form.valid"><i class="material-icons">add</i></button>
+
+</form>
